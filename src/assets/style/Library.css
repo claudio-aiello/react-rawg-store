@@ -1,0 +1,85 @@
+.library {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.library-section {
+  padding: 2rem;
+}
+
+.library-section h3 {
+  padding-top: 1rem;
+  color: var(--primary);
+}
+
+.games-list {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.games-list .price {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+  color: white;
+}
+
+.library-item {
+  position: relative;
+  width: 300px;
+  background-color: white;
+  margin: 20px;
+  font-weight: 800;
+  font-size: larger;
+  border-radius: 20px;
+}
+
+.library-item > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 40%;
+}
+
+.library-item h4,
+.library-item h3 {
+  font-size: 1.6rem;
+  margin: 1rem auto;
+  color: var(--primary);
+}
+
+.library-item:hover {
+  background-color: var(--primary);
+}
+
+.library-item:hover h3,
+.library-item:hover h4 {
+  color: white;
+}
+
+.library-item .ranking {
+  position: absolute;
+  font-size: 5rem;
+  left: 8px;
+  z-index: 5;
+  color: var(--secondary);
+}
+
+.library-item .cover {
+  height: 160px;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+}
+
+.library-item .btn {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}

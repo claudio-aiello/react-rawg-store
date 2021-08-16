@@ -1,0 +1,199 @@
+:root {
+  --primary: rgb(0, 0, 0);
+  --secondary: #590735;
+  --light: rgb(255, 255, 255);
+  --green: #2acb97;
+  --background-color: rgba(1, 1, 1, 0.5);
+}
+
+html {
+  font-size: 9px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #333;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+#root {
+  background-color: rgba(1, 1, 1, 0.7);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  /* background-color: rgba(1, 1, 1, 0.7); */
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  height: 100%;
+  min-height: 68vh;
+  position: relative;
+  padding: 3vh 0;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.7);
+  z-index: 10;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-inner {
+  height: 100%;
+  /* width: 100%; */
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.empty-list {
+  padding: 2rem 4rem;
+  text-align: center;
+  /* width: 100%; */
+  height: 100%;
+  margin: auto;
+}
+
+.empty-list p,
+.empty-list-title {
+  color: var(--primary);
+}
+
+h1 {
+  flex: 1;
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 10vh;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* h4 {
+  font-size: 1.5rem;
+} */
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: inline-block;
+}
+
+.show h2 {
+  padding: 2rem 2rem 0 2rem;
+  color: black;
+}
+
+.primary {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.secondary {
+  background: var(--secondary);
+  color: var(--light);
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.green {
+  background-color: var(--green);
+  color: white;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.purple {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.blue {
+  background-color: rgb(76, 157, 208);
+  color: white;
+}
+
+.yellow {
+  background-color: rgb(223, 223, 34);
+  color: black;
+}
+
+.section-title {
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  line-height: 60px;
+}
+
+.page-title {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

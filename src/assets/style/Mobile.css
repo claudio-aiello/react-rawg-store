@@ -1,0 +1,216 @@
+.mobile {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .game-page .game-title {
+    font-size: 30px;
+  }
+  .game-page .caroussel img {
+    min-height: unset;
+    height: 350px;
+    min-width: unset;
+    width: 600px;
+  }
+}
+
+@media (max-width: 850px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none !important;
+  }
+
+  .html {
+    font-size: 60%;
+  }
+  .container {
+    width: 95%;
+  }
+  .navbar {
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .search-box {
+    width: 80%;
+    margin-top: 65px;
+  }
+  .store-list {
+    padding: 10px 0;
+  }
+  .hamburger {
+    font-size: 4rem;
+    left: 5rem;
+    top: 2.5rem;
+  }
+  .nav-tab {
+    justify-content: center;
+  }
+  .navbar a:last-child .nav-tab {
+    border: none;
+  }
+
+  .game-page {
+    padding: 0;
+  }
+  .game-page .game-title {
+    font-size: 25px;
+  }
+  .game-page .caroussel img {
+    min-height: unset;
+    height: 250px;
+    min-width: unset;
+    width: 400px;
+    border-radius: 0;
+  }
+  .game-page .clip video {
+    width: 95%;
+  }
+  .game-page .caroussel .slick-prev:before,
+  .game-page .caroussel .slick-next:before {
+    color: var(--light);
+  }
+  .game-page .actions .btn {
+    font-size: 12px !important;
+    padding: 8px !important;
+  }
+  .library-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  .library-item .cover {
+    width: 100%;
+    height: 60%;
+  }
+
+  /* .library-item h4 {
+    padding: 0;
+    margin: 0;
+  } */
+
+  .favorites .library-item {
+    width: 80% !important;
+  }
+  .games-list {
+    justify-content: center;
+    align-items: center;
+  }
+  .custom-lists .empty-list .indications {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .custom-lists .empty-list .indications > div {
+    height: 150px;
+  }
+  .favorite-item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  .container {
+    padding-top: 0rem;
+    width: 100%;
+    min-height: 77vh;
+    margin-top: 65px;
+  }
+  section {
+    margin-top: 65px;
+  }
+
+  .header {
+    height: 13vh;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .buttonHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+  }
+  .hamburger {
+    position: relative;
+    display: block;
+    left: 0;
+    top: 0;
+    margin: auto;
+    height: 5rem;
+  }
+  h1 {
+    height: 5vh;
+    line-height: initial;
+    min-width: 110px;
+  }
+  .navbar {
+    top: 13vh;
+  }
+  .game-card {
+    width: 300px;
+  }
+  .game-card .caroussel img {
+    height: 150px;
+  }
+  .scrollTop {
+    right: 3rem;
+    bottom: 4rem;
+  }
+  .button-container {
+    position: sticky;
+    top: 13vh;
+  }
+  .library .btn {
+    padding: 12px 6px;
+    margin: 3px;
+  }
+  .library {
+    width: 100%;
+    margin-top: 65px;
+  }
+  .library-item {
+    width: 150px;
+    margin: 5px;
+  }
+  .library-item .cover {
+    width: 100%;
+    height: 60%;
+  }
+  .favorite-item {
+    width: 80%;
+  }
+  .favorites .library-item .cover {
+    height: 100px;
+  }
+  .lists {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .list {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto !important;
+    align-items: center;
+    justify-content: center;
+  }
+}

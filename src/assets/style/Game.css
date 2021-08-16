@@ -1,0 +1,60 @@
+.game-page {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}  
+
+.game-page .game-title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.game-page .caroussel {
+  margin: 0 40px 0 40px;
+}
+
+.game-page .caroussel img {
+  min-height: 300px;
+  max-height: 500px;
+  width: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.game-page .caroussel .slick-prev:before,
+.game-page .caroussel .slick-next:before {
+  color: var(--light);
+}
+
+.game-page .game-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.game-page .game-information {
+  padding: 20px;
+  text-align: left;
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+}
+
+.game-page .game-information a:hover {
+  text-decoration: underline;
+}
+
+.game-page .game-information strong {
+  font-size: 2rem;
+}
+
+.meta {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 0.5rem;
+  color: currentColor;
+  border: 1px solid currentColor;
+  border-radius: 0.4rem;
+}

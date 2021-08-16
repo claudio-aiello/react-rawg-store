@@ -1,0 +1,183 @@
+.store {
+  margin: auto;
+  position: relative;
+}
+
+.store .heading {
+  margin: auto;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.store-list {
+  margin: 0 auto;
+  padding: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-card {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.game-card .background {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.game-card .image {
+  background-size: cover;
+}
+
+.game-card .title {
+  color: var(--light);
+  padding: 1.8rem;
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center;
+
+}
+
+.game-card .info {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem 0 1rem;
+  background-color: #333;
+}
+
+.game-card .infoTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.game-card .infoBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-card .name {
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 80%;
+}
+
+.game-card .meta {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 0.5rem;
+  color: currentColor;
+  border: 1px solid currentColor;
+  border-radius: 0.4rem;
+}
+
+.game-card .icon {
+  box-sizing: content-box;
+  width: 1.5rem;
+  height: 1.5rem;
+}  
+
+.game-card .price {
+  font-size: 16px;
+  padding: 15px;
+  color: var(--light);
+}
+
+.game-card:hover {
+  background-color: rgb(12, 12, 12);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.game-card:hover h3,
+.game-card:hover .price {
+  color: var(--light);
+}
+
+.game-card .caroussel {
+  height: 200px;
+}
+
+.game-card .caroussel img {
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.game-card .caroussel .slick-prev:before,
+.game-card .caroussel .slick-next:before {
+  color: rgb(255, 255, 255);
+}
+
+.game-card .slick-next {
+  right: 8px;
+}
+.game-card .slick-prev {
+  left: 8px;
+  z-index: 1;
+}
+
+.game-card .rating-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1570px) {
+  .game-card {
+    margin: 30px 10px;
+  }
+}
+
+@media (max-width: 1470px) {
+  .store-list {
+    margin: 30px auto;
+    width: 70%;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .game-card {
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 1170px) {
+  .store-list {
+    width: auto;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .store-list {
+    margin: 10px auto;
+    display: inline-block;
+  }
+  .game-card {
+    margin: 0 auto 20px auto;
+    width: 500px;
+    height: auto;
+  }
+  .game-card .caroussel {
+    height: auto;
+  }
+  .game-card .caroussel img {
+    height: 300px;
+  }
+}
